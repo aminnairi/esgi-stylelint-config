@@ -5,7 +5,7 @@ StyleLint configuration
 ## Requirements
 
 - Terminal
-- Node
+- [Node](https://nodejs.org/)
 - NPM
 
 ## Installation
