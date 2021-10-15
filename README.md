@@ -1,5 +1,7 @@
 # @esgi/stylelint-config
 
+[![Build](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml/badge.svg?branch=production)](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml)
+
 StyleLint configuration
 
 ## Requirements
