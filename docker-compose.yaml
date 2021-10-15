@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  npm:
+    image: node:16.0.0
+    user: node
+    tty: true
+    stdin_open: true
+    entrypoint: npm
+    working_dir: /home/node/sources
+    volumes:
+      - .:/home/node/sources
+
+  npx:
+    image: node:16.0.0
+    user: node
+    tty: true
+    stdin_open: true
+    entrypoint: npx
+    working_dir: /home/node/sources
+    volumes:
+      - .:/home/node/sources

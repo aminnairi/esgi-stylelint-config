@@ -1,0 +1,35 @@
+{
+  "author": {
+    "name": "École Supérieure de Génie Informatique",
+    "url": "https://github.com/aminnairi"
+  },
+  "bugs": {
+    "url": "https://github.com/aminnairi/esgi-stylelint-config/issues"
+  },
+  "description": "StyleLint configuration",
+  "files": [
+    "build/index.js"
+  ],
+  "homepage": "https://github.com/aminnairi/esgi-stylelint-config#readme",
+  "keywords": [
+    "stylelint",
+    "style",
+    "lint",
+    "config",
+    "configuration",
+    "settings",
+    "esgi"
+  ],
+  "license": "GPL-3.0-or-later",
+  "main": "build/index.js",
+  "name": "@esgi/stylelint-config",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.58.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "stylelint": "^13.13.1"
+  }
+}
