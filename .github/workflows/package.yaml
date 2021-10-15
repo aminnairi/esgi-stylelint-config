@@ -1,24 +1,22 @@
-name: Build
+name: Package
 
 on:
-  pull_request:
-    branches:
-      - production
-      - development
-
   push:
     branches:
       - production
-      - development
 
 jobs:
-  build:
-    name: Build the optimized library files
+  package:
+    name: Build & publish the NPM package
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Environment
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
       - name: Install
         run: docker-compose run --rm --user root -T npm install
       - name: Build
         run: docker-compose run --rm --user root -T npm run build
+      - name: Publish
+        run: docker-compose run --rm --user root -T npm publish --access public
