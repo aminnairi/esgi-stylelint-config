@@ -1,0 +1,24 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - production
+      - development
+
+  push:
+    branches:
+      - production
+      - development
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        run: docker-compose run --rm --user root -T npm install
+      - name: Build
+        run: docker-compose run --rm --user root -T npm run build
