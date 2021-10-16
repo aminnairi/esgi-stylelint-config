@@ -1,6 +1,6 @@
 # @esgi/stylelint-config
 
-[![Build](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml/badge.svg?branch=production)](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml)
+[![Build](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml/badge.svg?branch=production)](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml) [![NPM version](https://badgen.net/npm/v/@esgi/stylelint-config)](https://www.npmjs.com/package/@esgi/stylelint-config)
 
 StyleLint configuration
 
