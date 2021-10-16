@@ -19,4 +19,4 @@ jobs:
       - name: Build
         run: docker-compose run --rm --user root -T npm run build
       - name: Publish
-        run: docker-compose run --rm --user root -T npm publish --access public
+        run: 'docker-compose run --rm --user root -T npm publish --access public || true'
