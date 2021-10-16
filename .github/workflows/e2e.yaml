@@ -1,7 +1,7 @@
 name: E2E tests
 
 on:
-  pull_requests:
+  pull_request:
     branches:
       - development
 
