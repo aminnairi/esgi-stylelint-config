@@ -1,6 +1,6 @@
 # @esgi/stylelint-config
 
-[![Build](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml/badge.svg?branch=production)](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml)
+[![Build](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml/badge.svg?branch=production)](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml) [![NPM version](https://badgen.net/npm/v/@esgi/stylelint-config)](https://www.npmjs.com/package/@esgi/stylelint-config) [![Package size](https://badgen.net/bundlephobia/minzip/@esgi/stylelint-config)](https://bundlephobia.com/package/@esgi/stylelint-config)
 
 StyleLint configuration
 
@@ -13,7 +13,7 @@ StyleLint configuration
 ## Installation
 
 ```console
-$ npm install stylelint @esgi/stylelint-config
+$ npm install --save-dev stylelint @esgi/stylelint-config
 ```
 
 ## Usage
