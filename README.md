@@ -13,7 +13,7 @@ StyleLint configuration
 ## Installation
 
 ```console
-$ npm install stylelint @esgi/stylelint-config
+$ npm install --save-dev stylelint @esgi/stylelint-config
 ```
 
 ## Usage
