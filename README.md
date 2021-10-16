@@ -1,6 +1,6 @@
 # @esgi/stylelint-config
 
-[![Build](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml/badge.svg?branch=production)](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/build.yaml) [![NPM version](https://badgen.net/npm/v/@esgi/stylelint-config)](https://www.npmjs.com/package/@esgi/stylelint-config) [![Package size](https://badgen.net/bundlephobia/minzip/@esgi/stylelint-config)](https://bundlephobia.com/package/@esgi/stylelint-config)
+[![E2E](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/e2e.yaml/badge.svg)](https://github.com/aminnairi/esgi-stylelint-config/actions/workflows/e2e.yaml) [![NPM version](https://badgen.net/npm/v/@esgi/stylelint-config)](https://www.npmjs.com/package/@esgi/stylelint-config) [![Package size](https://badgen.net/bundlephobia/minzip/@esgi/stylelint-config)](https://bundlephobia.com/package/@esgi/stylelint-config)
 
 StyleLint configuration
 
@@ -45,3 +45,18 @@ $ touch package.json
 ```console
 $ npm run stylelint
 ```
+## Code of conduct
+
+See [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md).
+
+## Contributing
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+
+## Changelog
+
+See [`CHANGELOG.md`](./CHANGELOG.md).
+
+## License
+
+See [`LICENSE`](./LICENSE).
