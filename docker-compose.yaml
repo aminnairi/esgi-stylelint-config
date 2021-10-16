@@ -20,3 +20,13 @@ services:
     working_dir: /home/node/sources
     volumes:
       - .:/home/node/sources
+
+  bash:
+    image: node:16.0.0
+    user: node
+    tty: true
+    stdin_open: true
+    entrypoint: bash -c
+    working_dir: /home/node/sources
+    volumes:
+      - .:/home/node/sources

@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "stylelint": "stylelint --fix index.bad.css"
+  },
+  "devDependencies": {
+    "stylelint": "13.13.1"
+  }
+}
