@@ -19,7 +19,7 @@ jobs:
       - name: Tarball
         run: docker-compose run --rm --user root -T npm pack
       - name: Rename
-        run: docker-compose run --rm --user root -T bash mv *.tgz package.tgz
+        run: docker-compose run --rm --user root -T bash 'mv *.tgz package.tgz'
       - name: Install
         run: docker-compose run --rm --user root -T npm install --prefix e2e ./package.tgz
       - name: Stylelint
