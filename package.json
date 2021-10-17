@@ -23,7 +23,7 @@
   "license": "GPL-3.0-or-later",
   "main": "build/index.js",
   "name": "@esgi/stylelint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "bin": {
     "esgi-stylelint": "build/binary/index.js"
   },

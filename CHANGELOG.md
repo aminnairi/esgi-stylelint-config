@@ -2,8 +2,23 @@
 
 ## Versions
 
+- [`0.3.0`](#030)
 - [`0.2.0`](#020)
 - [`0.1.0`](#010)
+
+## 0.3.0
+
+### Major changes
+
+None.
+
+### Minor changes
+
+- Added a CLI ([#14](https://github.com/aminnairi/esgi-stylelint-config/pull/14))
+
+### Bug fixes
+
+None.
 
 ## 0.2.0
 
