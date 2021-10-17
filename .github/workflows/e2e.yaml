@@ -21,7 +21,7 @@ jobs:
       - name: Rename
         run: mv *.tgz esgi-stylelint-config.tgz
       - name: CLI Diff
-        run: 'npm_config_yes=true npx ./esgi-stylelint-config.tgz e2e/index.bad.css | diff --ignore-all-space e2e/output.expectation.txt -'
+        run: 'npm_config_yes=true npx ./esgi-stylelint-config.tgz e2e/index.bad.css | cmp e2e/output.expectation.txt -'
       - name: Package install
         run: npm install --prefix e2e ./esgi-stylelint-config.tgz
       - name: Stylelint

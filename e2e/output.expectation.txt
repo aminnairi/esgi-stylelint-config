@@ -7,3 +7,4 @@
 /home/runner/work/esgi-stylelint-config/esgi-stylelint-config/e2e/index.bad.css:1:34: Expected single space after ":" (declaration-colon-space-after)
 /home/runner/work/esgi-stylelint-config/esgi-stylelint-config/e2e/index.bad.css:1:3: Expected single space after "," (selector-list-comma-space-after)
 /home/runner/work/esgi-stylelint-config/esgi-stylelint-config/e2e/index.bad.css:1:6: Expected single space after "," (selector-list-comma-space-after)
+
