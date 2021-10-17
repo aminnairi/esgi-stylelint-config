@@ -21,7 +21,7 @@ jobs:
       - name: Rename
         run: docker-compose run --rm --user root -T bash 'mv *.tgz esgi-stylelint-config.tgz'
       - name: CLI Diff
-        run: 'docker-compose run --rm --user root -T -e npm_config_yes=true npx ./esgi-stylelint-config.tgz e2e/index.bad.css'
+        run: 'sudo docker-compose run --rm --user root -T -e npm_config_yes=true npx ./esgi-stylelint-config.tgz e2e/index.bad.css'
           #- name: Install
           #run: docker-compose run --rm --user root -T npm install --prefix e2e ./package.tgz
           #- name: Stylelint
