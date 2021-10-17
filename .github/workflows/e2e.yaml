@@ -19,12 +19,12 @@ jobs:
       - name: Tarball
         run: docker-compose run --rm --user root -T npm pack
       - name: Rename
-        run: docker-compose run --rm --user root -T bash 'mv *.tgz package.tgz'
-      - name: Install
-        run: docker-compose run --rm --user root -T npm install --prefix e2e ./package.tgz
+        run: docker-compose run --rm --user root -T bash 'mv *.tgz esgi-stylelint-config.tgz'
       - name: CLI Diff
-        run: 'docker-compose run --rm --user root -T npm --prefix e2e run esgi-stylelint e2e/index.bad.css | diff e2e/output.expectation.txt -'
-      - name: Stylelint
-        run: docker-compose run --rm --user root -T npm --prefix e2e run stylelint
-      - name: Diff
-        run: docker-compose run --rm --user root -T bash 'diff --ignore-space-change e2e/index.bad.css e2e/index.good.css || exit 1'
+        run: 'docker-compose run --rm --user root -T npx ./esgi-stylelint-config.tgz e2e/index.bad.css | diff e2e/output.expectation.txt -'
+          #- name: Install
+          #run: docker-compose run --rm --user root -T npm install --prefix e2e ./package.tgz
+          #- name: Stylelint
+          #run: docker-compose run --rm --user root -T npm --prefix e2e run stylelint
+          #- name: Diff
+          #run: docker-compose run --rm --user root -T bash 'diff --ignore-space-change e2e/index.bad.css e2e/index.good.css || exit 1'
