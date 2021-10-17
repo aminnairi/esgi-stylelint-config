@@ -22,6 +22,8 @@ jobs:
         run: mv *.tgz esgi-stylelint-config.tgz
       - name: CLI
         run: 'npm_config_yes=true npx ./esgi-stylelint-config.tgz e2e/index.bad.css > e2e/output.result.txt'
+      - name: CLI debug
+        run: cat e2e/output.result.txt
       - name: CLI diff
         run: diff e2e/output.result.txt e2e/output.expectation.txt
       - name: Package install
