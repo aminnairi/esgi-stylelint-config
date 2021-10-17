@@ -24,12 +24,17 @@
   "main": "build/index.js",
   "name": "@esgi/stylelint-config",
   "version": "0.2.0",
+  "bin": {
+    "esgi-stylelint": "build/binary/index.js"
+  },
   "scripts": {
     "build": "rollup --config rollup.config.js"
   },
+  "dependencies": {
+    "stylelint": "^13.13.1"
+  },
   "devDependencies": {
     "rollup": "^2.58.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "stylelint": "^13.13.1"
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
