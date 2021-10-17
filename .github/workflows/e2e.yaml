@@ -20,10 +20,10 @@ jobs:
         run: npm pack
       - name: Rename
         run: mv *.tgz esgi-stylelint-config.tgz
-      - name: CLI
-        run: sudo npm_config_yes=true npx --quiet ./esgi-stylelint-config.tgz e2e/index.bad.css
       - name: Package install
         run: npm install --prefix e2e ./esgi-stylelint-config.tgz
+      - name: CLI
+        run: npx --prefix e2e esgi-stylelint e2e/index.bad.css
       - name: Stylelint
         run: npm --prefix e2e run stylelint
       - name: Diff
