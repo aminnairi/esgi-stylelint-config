@@ -24,6 +24,9 @@
   "main": "build/index.js",
   "name": "@esgi/stylelint-config",
   "version": "0.3.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "bin": {
     "esgi-stylelint": "build/binary/index.js"
   },
