@@ -5,7 +5,7 @@ stylelint.lint({
   fix: true,
   formatter: "string",
   config: stylelintOptions,
-  files: (process.argv[2] || "").split(/\s+/)
+  files: process.argv.slice(2)
 }).then(result => {
   if (result.errored) {
     throw new Error(result.output);
