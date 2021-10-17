@@ -2,6 +2,7 @@ const stylelint = require("stylelint");
 const stylelintOptions = require("../index.js");
 
 stylelint.lint({
+  fix: true,
   formatter: "string",
   config: stylelintOptions,
   files: (process.argv[2] || "").split(/\s+/)
