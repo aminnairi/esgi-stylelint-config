@@ -1,6 +1,16 @@
 version: "3"
 
 services:
+  node:
+    image: node:16.0.0
+    user: node
+    tty: true
+    stdin_open: true
+    entrypoint: node
+    working_dir: /home/node/sources
+    volumes:
+      - .:/home/node/sources
+
   npm:
     image: node:16.0.0
     user: node
