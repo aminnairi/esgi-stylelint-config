@@ -2,10 +2,25 @@
 
 ## Versions
 
+- [`0.4.1`](#041)
 - [`0.4.0`](#040)
 - [`0.3.0`](#030)
 - [`0.2.0`](#020)
 - [`0.1.0`](#010)
+
+## 0.4.1
+
+### Major changes
+
+None.
+
+### Minor changes
+
+None.
+
+### Bug fixes
+
+- Fixed linting multiple files in the CLI ([#24](https://github.com/aminnairi/esgi-stylelint-config/pull/24))
 
 ## 0.4.0
 
