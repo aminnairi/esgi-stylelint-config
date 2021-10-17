@@ -21,8 +21,22 @@ $ npm install --save-dev stylelint @esgi/stylelint-config
 
 ### Without configuration
 
+#### With a single file
+
 ```console
 $ npx @esgi/stylelint-config index.css
+```
+
+#### With multiple files
+
+```console
+$ npx @esgi/stylelint-config first.css second.css third.css
+```
+
+#### Using a glob
+
+```console
+$ npx @esgi/stylelint-config *.css
 ```
 
 ### With configuration
