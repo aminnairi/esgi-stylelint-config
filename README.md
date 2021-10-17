@@ -9,6 +9,7 @@ StyleLint configuration
 - Terminal
 - [Node](https://nodejs.org/)
 - NPM
+- NPX
 
 ## Installation
 
@@ -17,6 +18,14 @@ $ npm install --save-dev stylelint @esgi/stylelint-config
 ```
 
 ## Usage
+
+### Without configuration
+
+```console
+$ npx @esgi/stylelint-config index.css
+```
+
+### With configuration
 
 ```console
 $ touch .stylelintrc.js
