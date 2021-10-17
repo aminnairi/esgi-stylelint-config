@@ -21,7 +21,7 @@ jobs:
       - name: Rename
         run: mv *.tgz esgi-stylelint-config.tgz
       - name: Package install
-        run: npm install --prefix e2e ./esgi-stylelint-config.tgz
+        run: npm --prefix e2e install ./esgi-stylelint-config.tgz
       - name: List binaries
         run: ls -alh e2e/node_modules/.bin
       - name: Stylelint
