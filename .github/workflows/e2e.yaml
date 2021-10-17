@@ -26,7 +26,5 @@ jobs:
         run: docker-compose run --rm --user root -T npm --prefix e2e run stylelint
       - name: Diff
         run: docker-compose run --rm --user root -T bash 'diff --ignore-space-change e2e/index.bad.css e2e/index.good.css || exit 1'
-      - name: CLI
-        run: 'docker-compose run --rm --user root -T npx ./package.tgz e2e/index.bad.css | sudo tee e2e/output.result.txt'
-      - name: Diff
-        run: docker-compose run --rm --user root -T bash 'diff --ignore-space-change e2e/output.expectation.txt e2e/output.result.txt || exit 1'
+      - name: CLI Diff
+        run: 'docker-compose run --rm --user root -T npx ./package.tgz e2e/index.bad.css | diff e2e/output.result.txt -'
