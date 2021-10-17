@@ -27,6 +27,6 @@ jobs:
       - name: Diff
         run: docker-compose run --rm --user root -T bash 'diff e2e/index.bad.css e2e/index.good.css || exit 1'
       - name: CLI
-        run: 'docker-compose run --rm --user root -T npx ./package.tgz e2e/index.bad.css > e2e/output.result.txt'
+        run: 'docker-compose run --rm --user root -T npx ./package.tgz e2e/index.bad.css | sudo tee e2e/output.result.txt'
       - name: Diff
         run: docker-compose run --rm --user root -T bash 'diff e2e/output.expectation.txt e2e/output.result.txt || exit 1'
