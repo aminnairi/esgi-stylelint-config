@@ -25,7 +25,7 @@ jobs:
       - name: List binaries
         run: ls -alh e2e/node_modules/.bin
       - name: Binary test
-        run: 'node e2e/node_modules/.bin/esgi-stylelint e2e/index.bad.css | diff --ignore-space-change e2e/output.expectation.txt -'
+        run: 'node e2e/node_modules/.bin/esgi-stylelint e2e/index.bad.css | diff --ignore-all-space e2e/output.expectation.txt -'
       - name: Stylelint
         run: npm --prefix e2e run stylelint
       - name: Diff
