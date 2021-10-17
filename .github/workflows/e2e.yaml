@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        node: ["14.0.0", "15.0.0", "16.0.0"]
+        node: ["13.0.0", "14.0.0", "15.0.0", "16.0.0"]
     name: End-to-end tests for Node ${{ matrix.node }}
     steps:
       - name: Checkout
