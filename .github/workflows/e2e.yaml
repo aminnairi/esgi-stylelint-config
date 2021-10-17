@@ -12,19 +12,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install
-        run: docker-compose run --rm --user root -T npm install
+      - name: Dependencies install
+        run: npm install
       - name: Build
-        run: docker-compose run --rm --user root -T npm run build
+        run: npm run build
       - name: Tarball
-        run: docker-compose run --rm --user root -T npm pack
+        run: npm pack
       - name: Rename
-        run: docker-compose run --rm --user root -T bash 'mv *.tgz esgi-stylelint-config.tgz'
+        run: mv *.tgz esgi-stylelint-config.tgz
       - name: CLI Diff
-        run: 'npm_config_yes=true npx ./esgi-stylelint-config.tgz e2e/index.bad.css'
-          #- name: Install
-          #run: docker-compose run --rm --user root -T npm install --prefix e2e ./package.tgz
-          #- name: Stylelint
-          #run: docker-compose run --rm --user root -T npm --prefix e2e run stylelint
-          #- name: Diff
-          #run: docker-compose run --rm --user root -T bash 'diff --ignore-space-change e2e/index.bad.css e2e/index.good.css || exit 1'
+        run: 'npm_config_yes=true npx ./esgi-stylelint-config.tgz e2e/index.bad.css | diff --ignore-space-change e2e/output.expectation.txt'
+      - name: Package install
+        run: npm install --prefix e2e ./esgi-stylelint-config.tgz
+      - name: Stylelint
+        run: npm --prefix e2e run stylelint
+      - name: Diff
+        run: 'diff --ignore-space-change e2e/index.bad.css e2e/index.good.css || exit 1'
