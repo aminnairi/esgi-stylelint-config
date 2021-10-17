@@ -22,9 +22,9 @@ jobs:
         run: mv *.tgz esgi-stylelint-config.tgz
       - name: Package install
         run: npm --prefix e2e install ./esgi-stylelint-config.tgz
-      - name: Binary test
-        run: node e2e/node_modules/.bin/esgi-stylelint e2e/index.bad.css
-      - name: Stylelint
+      - name: Binary
+        run: node e2e/node_modules/.bin/esgi-stylelint e2e/index.good.css
+      - name: StyleLint
         run: npm --prefix e2e run stylelint
       - name: Diff
         run: 'diff --ignore-all-space e2e/index.bad.css e2e/index.good.css || exit 1'
