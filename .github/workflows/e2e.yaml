@@ -20,10 +20,10 @@ jobs:
         run: docker-compose run --rm --user root -T npm pack
       - name: Rename
         run: docker-compose run --rm --user root -T bash 'mv *.tgz package.tgz'
-      - name: CLI Diff
-        run: 'docker-compose run --rm --user root -T npx ./package.tgz e2e/index.bad.css | diff e2e/output.expectation.txt -'
       - name: Install
         run: docker-compose run --rm --user root -T npm install --prefix e2e ./package.tgz
+      - name: CLI Diff
+        run: 'docker-compose run --rm --user root -T npm --prefix e2e run esgi-eslint e2e/index.bad.css | diff e2e/output.expectation.txt -'
       - name: Stylelint
         run: docker-compose run --rm --user root -T npm --prefix e2e run stylelint
       - name: Diff
