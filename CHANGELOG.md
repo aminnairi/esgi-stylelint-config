@@ -2,11 +2,26 @@
 
 ## Versions
 
+- [`0.4.2`](#042)
 - [`0.4.1`](#041)
 - [`0.4.0`](#040)
 - [`0.3.0`](#030)
 - [`0.2.0`](#020)
 - [`0.1.0`](#010)
+
+## 0.4.2
+
+### Major changes
+
+None.
+
+### Minor changes
+
+None.
+
+### Bug fixes
+
+- [Snyk] Security upgrade stylelint from 13.13.1 to 14.0.0 ([#26](https://github.com/aminnairi/esgi-stylelint-config/pull/26))
 
 ## 0.4.1
 
