@@ -34,7 +34,7 @@
     "build": "rollup --config rollup.config.js"
   },
   "dependencies": {
-    "stylelint": "^13.13.1"
+    "stylelint": "^14.0.0"
   },
   "devDependencies": {
     "rollup": "^2.58.0",
